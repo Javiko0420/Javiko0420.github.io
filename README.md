@@ -1,2 +1,2 @@
 # Javiko0420.github.io
-Mi pagina de pruebe en github
+Mi pagina de prueba en github
