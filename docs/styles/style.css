@@ -258,6 +258,8 @@ body {
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;   /* Centra horizontalmente */
+  align-items: center;       /* Centra verticalmente */
   gap: 0.7rem;
   margin-top: 1rem;
 }
