@@ -7,41 +7,109 @@
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <button id="modo-toggle">☀️ / 🌙</button>
-    </nav>
+  <header class="custom-header">
+    <div class="header-content">
+      <div class="header-left">
+        <span class="header-logo">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </span>
+        <span class="header-name">Javier</span>
+        <span class="header-title">Guerrero</span>
+      </div>
+      <nav class="header-nav">
+        <a class="nav-link active" href="#"><span class="nav-icon">🏠</span> Home</a>
+        <a class="nav-link" href="#"><span class="nav-icon">👤</span> Acerca</a>
+        <a class="nav-link" href="#"><span class="nav-icon">📚</span> Servicios</a>
+      </nav>
+      <div class="header-actions">
+        <button id="modo-toggle" class="mode-btn" aria-label="Cambiar modo">🌙</button>
+        <a href="#" class="cta-btn">Platiquemos <span style="font-size:1em;">↗</span></a>
+      </div>
+    </div>
   </header>
-
   <main>
-    <section id="inicio" class="hero">
-      <h1>Javier Felipe Guerrero Zambrano</h1>
-      <p>Full Stack Developer</p>
+    <section class="main-grid">
+      <!-- Columna izquierda: Perfil -->
+      <div class="profile-card card">
+        <img src="assets/Javier_Guerrero.jpeg" alt="Foto de Javier Felipe Guerrero Zambrano" class="profile-img"/>
+        <div class="profile-info">
+          <h2>Javier Guerrero <span class="wave">👋</span></h2>
+          <p><strong>Full Stack Developer</strong> en <strong>Microsoft</strong></p>
+          <p>Apasionado por crear soluciones modernas y eficientes.</p>
+          <a href="#" class="main-btn">Agenda una llamada</a>
+          <a href="https://github.com/Javiko0420" target="_blank" class="main-btn secondary">Mi perfil de Github</a>
+        </div>
+      </div>
+
+      <!-- Columna central: Redes sociales y especialidades -->
+      <div class="center-column">
+        <div class="card">
+          <h3>Mis redes sociales</h3>
+          <div class="social-grid">
+            <a href="https://youtube.com/@javiguerreroz86" target="_blank" class="social-btn youtube">Youtube</a>
+            <a href="https://www.linkedin.com/in/javier-felipe-guerrero-zambrano-8951282b" target="_blank" class="social-btn linkedin">LinkedIn</a>
+            <a href="https://github.com/Javiko0420" target="_blank" class="social-btn github">Github</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Mis especialidades</h3>
+          <div class="skills-grid">
+            <span class="skill">DevOps</span>
+            <span class="skill">Programación</span>
+            <span class="skill">Cloud</span>
+            <span class="skill">Redes</span>
+            <span class="skill">Arquitectura</span>
+            <span class="skill">Bots</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha: Lecturas recientes -->
+      <div class="card">
+        <h3>Mis lecturas recientes</h3>
+        <div class="books-grid">
+          <div class="book">
+            <img src="assets/linux.jpg" alt="Linux Basics for Hackers" />
+            <span class="book-label">Linux Basics for Hackers</span>
+          </div>
+          <div class="book">
+            <img src="assets/command.jpg" alt="The Linux Command Line" />
+            <span class="book-label">The Linux Command Line</span>
+          </div>
+          <div class="book">
+            <img src="assets/record.jpg" alt="Vigilancia Permanente" />
+            <span class="book-label">Vigilancia Permanente</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <img src="assets/Javier_Guerrero.jpeg" alt="Foto de Javier Felipe Guerrero Zambrano" class="foto-perfil" />
-      <p>Desarrollador full stack enfocado en crear soluciones modernas, eficientes y visualmente atractivas.</p>
-    </section>
-
-    <section id="Proyectos">
-      <h2>Proyectos</h2>
-      <p>Próximamente...</p>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Puedes encontrarme en redes sociales o enviarme un correo.</p>
+    <!-- Sección inferior: ¿En qué te puedo ayudar? -->
+    <section class="help-section">
+      <h3>Te puedo ayudar en...</h3>
+      <div class="help-grid">
+        <div class="help-card">
+          <span class="help-icon">✖️</span>
+          <span>Sistemas distribuidos</span>
+        </div>
+        <div class="help-card">
+          <span class="help-icon">🧠</span>
+          <span>Inteligencia Artificial</span>
+        </div>
+        <div class="help-card">
+          <span class="help-icon">🌱</span>
+          <span>Crecimiento profesional</span>
+        </div>
+        <div class="help-card">
+          <span class="help-icon">💻</span>
+          <span>Ingeniería de software</span>
+        </div>
+      </div>
     </section>
   </main>
-
   <script src="scripts/script.js"></script>
 </body>
 </html>

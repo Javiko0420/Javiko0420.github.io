@@ -1,7 +1,19 @@
-const toggleBtn = document.getElementById('modo-toggle');
-const root = document.documentElement;
+const btn = document.getElementById('modo-toggle');
+const html = document.documentElement;
 
-toggleBtn.addEventListener('click', () => {
-  const isDark = root.getAttribute('data-theme') === 'dark';
-  root.setAttribute('data-theme', isDark ? 'light' : 'dark');
+function updateModeIcon() {
+  if (html.getAttribute('data-theme') === 'dark') {
+    btn.textContent = '☀️';
+  } else {
+    btn.textContent = '🌙';
+  }
+}
+
+btn.addEventListener('click', () => {
+  const current = html.getAttribute('data-theme');
+  html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+  updateModeIcon();
 });
+
+// Inicializa el icono al cargar
+updateModeIcon();
