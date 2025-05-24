@@ -228,18 +228,24 @@ body {
 /* Redes sociales */
 .social-grid {
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;   /* Centra horizontalmente */
+  align-items: center;       /* Centra verticalmente */
+  gap: 1rem;                 /* Espacio entre botones */
   margin-top: 1rem;
 }
 .social-btn {
+  min-width: 110px;
+  text-align: center;
   padding: 0.5em 1em;
   border-radius: 8px;
-  background: var(--nav-active-bg);
-  color: var(--text);
-  text-decoration: none;
   font-weight: 500;
-  transition: background 0.2s;
+  font-size: 1em;
+  transition: transform 0.15s;
+  display: inline-block;
+}
+.social-btn:hover {
+  transform: translateY(-3px) scale(1.05);
 }
 .social-btn.youtube { background: #ff0000; color: #fff; }
 .social-btn.linkedin { background: #0077b5; color: #fff; }
